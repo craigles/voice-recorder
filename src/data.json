@@ -1,0 +1,108 @@
+{
+    "objects": [
+        {
+            "name": "ball",
+            "image": "images/ball.jpg"
+        },
+        {
+            "name": "bicycle",
+            "image": "images/bicycle.jpg"
+        },
+        {
+            "name": "butterfly",
+            "image": "images/butterfly.jpg"
+        },
+        {
+            "name": "cat",
+            "image": "images/cat.jpg"
+        },
+        {
+            "name": "dog",
+            "image": "images/dog.jpg"
+        },
+        {
+            "name": "ice-cream",
+            "image": "images/ice-cream.jpg"
+        },
+        {
+            "name": "rainbow",
+            "image": "images/rainbow.jpg"
+        },
+        {
+            "name": "robot",
+            "image": "images/robot.jpg"
+        },
+        {
+            "name": "elephant",
+            "image": "images/elephant.jpg"
+        },
+        {
+            "name": "train",
+            "image": "images/train.jpg"
+        },
+        {
+            "name": "rocket",
+            "image": "images/rocket.jpg"
+        },
+        {
+            "name": "flower",
+            "image": "images/flower.jpg"
+        },
+        {
+            "name": "dinosaur",
+            "image": "images/dinosaur.jpg"
+        },
+        {
+            "name": "teddy bear",
+            "image": "images/teddy-bear.jpg"
+        },
+        {
+            "name": "pizza",
+            "image": "images/pizza.jpg"
+        },
+        {
+            "name": "star",
+            "image": "images/star.jpg"
+        },
+        {
+            "name": "fish",
+            "image": "images/fish.jpg"
+        },
+        {
+            "name": "apple",
+            "image": "images/apple.jpg"
+        },
+        {
+            "name": "guitar",
+            "image": "images/guitar.jpg"
+        },
+        {
+            "name": "drums",
+            "image": "images/drums.jpg"
+        },
+        {
+            "name": "piano",
+            "image": "images/piano.jpg"
+        },
+        {
+            "name": "violin",
+            "image": "images/violin.jpg"
+        },
+        {
+            "name": "trumpet",
+            "image": "images/trumpet.jpg"
+        },
+        {
+            "name": "microphone",
+            "image": "images/microphone.jpg"
+        },
+        {
+            "name": "saxophone",
+            "image": "images/saxophone.jpg"
+        },
+        {
+            "name": "harp",
+            "image": "images/harp.jpg"
+        }
+    ]
+}

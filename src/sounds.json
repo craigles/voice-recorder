@@ -1,0 +1,15 @@
+{
+  "correctSounds": [
+    "/sounds/correct/correct.mp3",
+    "/sounds/correct/correct1.mp3",
+    "/sounds/correct/correct2.mp3",
+    "/sounds/correct/correct3.mp3",
+    "/sounds/correct/correct4.mp3"
+  ],
+  "incorrectSounds": [
+    "/sounds/incorrect/incorrect.mp3",
+    "/sounds/incorrect/incorrect1.mp3",
+    "/sounds/incorrect/incorrect2.mp3",
+    "/sounds/incorrect/incorrect3.mp3"
+  ]
+} 

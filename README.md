@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# Voice Recorder with Azure Speech-to-Text
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React TypeScript application that allows users to record their voice and convert it to text using Azure's Speech-to-Text service.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Record audio using the browser's MediaRecorder API
+- Convert recorded audio to text using Azure Speech-to-Text
+- Real-time transcription display
+- Modern, responsive UI
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js (version 14 or higher)
+- An Azure account with Speech Service enabled
+- A web browser with microphone access
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### 1. Install Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### 2. Configure Azure Speech Service
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Go to the [Azure Portal](https://portal.azure.com)
+2. Create a new Speech Service resource or use an existing one
+3. Navigate to "Keys and Endpoint" in the left sidebar
+4. Copy Key 1 or Key 2
+5. Note the Region (e.g., "East US")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Update Configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open `src/config.ts` and replace the placeholder values:
 
-### `npm run eject`
+```typescript
+export const AZURE_CONFIG = {
+  SPEECH_KEY: 'your-actual-azure-speech-key-here',
+  SPEECH_REGION: 'your-azure-region-here', // e.g., 'eastus'
+};
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 4. Start the Development Server
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application will open in your browser at `http://localhost:3000`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How to Use
 
-## Learn More
+1. Click "Start Recording" to begin recording your voice
+2. Speak clearly into your microphone
+3. Click "Stop Recording" when finished
+4. Click "Convert to Text" to transcribe your recording
+5. The transcribed text will appear below the audio player
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Troubleshooting
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Microphone Access Denied**: Make sure your browser has permission to access your microphone
+- **Azure Configuration Error**: Verify your Speech Service key and region are correct in `src/config.ts`
+- **No Speech Detected**: Try speaking more clearly or checking your microphone settings
+
+## Technologies Used
+
+- React 19
+- TypeScript
+- Azure Speech Service SDK
+- MediaRecorder API
+- HTML5 Audio API
+
+## License
+
+This project is open source and available under the MIT License.
